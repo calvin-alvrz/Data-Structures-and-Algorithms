@@ -1,4 +1,4 @@
-package data_structures.stack;
+package data_structures.queue;
 
 public class Employee {
     private String firstName;
