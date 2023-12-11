@@ -42,7 +42,21 @@ public class ArrayQueue {
         return employee;
     }
 
+    public Employee peek() {
+        if (size() == 0) {
+            throw new NoSuchElementException();
+        }
+        
+        return queue[front];
+    }
+
     public int size() {
         return back - front;
+    }
+
+    public void printQueue() {
+        for (int i = front; i < back; i++) {
+            System.out.println(queue[i]);
+        }
     }
 }
