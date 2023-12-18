@@ -11,5 +11,18 @@ public class Main {
 
         ArrayQueue queue = new ArrayQueue(10);
 
+        queue.add(janeJones);
+        queue.add(johnDoe);
+        queue.add(marySmith);
+        queue.add(mikeWilson);
+        queue.add(billEnd);
+        // queue.printQueue();
+
+        queue.remove();
+        queue.remove();
+        // queue.printQueue();
+
+        System.out.println(queue.peek());
+        queue.printQueue();
     }
 }
