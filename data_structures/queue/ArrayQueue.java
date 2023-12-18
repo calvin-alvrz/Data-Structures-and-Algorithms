@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 import data_structures.stack.Employee;
 
 public class ArrayQueue {
-    
+
     private Employee[] queue;
     private int front;
     private int back;
@@ -29,11 +29,10 @@ public class ArrayQueue {
         if (size() == 0) {
             throw new NoSuchElementException();
         }
-        
+
         Employee employee = queue[front];
         queue[front] = null;
         front++;
-
         if (size() == 0) {
             front = 0;
             back = 0;
@@ -46,7 +45,7 @@ public class ArrayQueue {
         if (size() == 0) {
             throw new NoSuchElementException();
         }
-        
+
         return queue[front];
     }
 

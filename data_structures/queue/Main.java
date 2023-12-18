@@ -10,7 +10,6 @@ public class Main {
         Employee billEnd = new Employee("Bill", "End", 78);
 
         ArrayQueue queue = new ArrayQueue(10);
-        queue.add(janeJones);
-        queue.add(johnDoe);
+
     }
 }
